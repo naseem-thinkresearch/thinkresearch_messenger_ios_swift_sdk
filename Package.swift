@@ -4,18 +4,18 @@
 import PackageDescription
 
 let package = Package(
-    name: "TRC_Chatbot_SDK",
+    name: "thinkresearch_messenger_ios_swift_sdk",
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "TRC_Chatbot_SDK",
-            targets: ["TRC_Chatbot_SDK"]),
+            name: "thinkresearch_messenger_ios_swift_sdk",
+            targets: ["thinkresearch_messenger_ios_swift_sdk"]),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "TRC_Chatbot_SDK",dependencies:   [
+            name: "thinkresearch_messenger_ios_swift_sdk",dependencies:   [
                 "App",
                 "Flutter",
                 "FlutterPluginRegistrant",
