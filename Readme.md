@@ -35,17 +35,17 @@ After installation, you can use the `thinkresearch_messenger_ios_swift_sdk` libr
        
        // Staging workflow
        var configuration = ChatBotConfiguration(
-           appId: "yB9BJmrcH3bM4CShtMKB5qrw",
-           baseUrl: "test.ca.digital-front-door.stg.gcp.trchq.com",
-           originURL: "test.ca.digital-front-door.stg.gcp.trchq.com",
+           appId: "****************",
+           baseUrl: "test.ca.digital-fr...........com",
+           originURL: "test.ca.digital-fr...........com",
            lang: "en"
        )
        
        var chatBotSdk: TRC_Chatbot_SDK?
        var language = "en"
-       var appIID = "yB9BJmrcH3bM4CShtMKB5qrw"
-       var originValue = "test.ca.digital-front-door.stg.gcp.trchq.com"
-       var baseURL = "test.ca.digital-front-door.stg.gcp.trchq.com"
+       var appIID = "****************"
+       var originValue = "test.ca.digital-fr...........com"
+       var baseURL = "test.ca.digital-fr...........com"
        
        override func viewDidLoad() {
            super.viewDidLoad()
@@ -54,14 +54,6 @@ After installation, you can use the `thinkresearch_messenger_ios_swift_sdk` libr
        @IBAction func btnClicked(_ sender: UIButton) {
            sender.isUserInteractionEnabled = false
            
-           let defConfig = ConfigurationManager.shared.getDefaultConfiguration()
-           
-           configuration = ChatBotConfiguration(
-               appId: defConfig!.appID,
-               baseUrl: defConfig!.baseURL,
-               originURL: defConfig!.origin,
-               lang: defConfig!.language
-           )
            
            chatBotSdk = TRC_Chatbot_SDK(configuration: configuration, viewController: self)
            chatBotSdk?.openBot()
@@ -71,30 +63,6 @@ After installation, you can use the `thinkresearch_messenger_ios_swift_sdk` libr
            }
        }
        
-       @IBAction func onSettingClicked(_ sender: Any) {
-           if let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "SettingsController") as? SettingsController {
-               secondViewController.onValueUpdate = { (originValue: String, baseUrl: String, appId: String, language: String) in
-                   guard !language.isEmpty && !appId.isEmpty && !baseUrl.isEmpty && !originValue.isEmpty else {
-                       print("Some of the values are empty")
-                       return
-                   }
-                   
-                   self.language = language
-                   self.appIID = appId
-                   self.originValue = originValue
-                   self.baseURL = baseUrl
-                   
-                   self.configuration = ChatBotConfiguration(
-                       appId: appId,
-                       baseUrl: baseUrl,
-                       originURL: originValue,
-                       lang: language
-                   )
-               }
-               
-               self.navigationController?.pushViewController(secondViewController, animated: true)
-           }
-       }
    }
    ```
 
