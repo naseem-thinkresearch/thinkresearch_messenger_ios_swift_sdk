@@ -63,10 +63,13 @@ let package = Package(
             name: "shared_preferences_foundation",
             path: "Frameworks/Release/shared_preferences_foundation.xcframework"
         ),
-        .binaryTarget(
-            name: "sqflite",
-            path: "Frameworks/Release/sqflite.xcframework"
-        ),
+        // .binaryTarget(
+        //     name: "sqflite",
+        //     path: "Frameworks/Release/sqflite.xcframework"
+        // ),
+        .binaryTarget(name: "sqflite",
+                          url: "https://github.com/PatientOrderSets/thinkresearch_messenger_ios_swift_sdk/releases/download/v1.0.0/sqflite.xcframework.zip",
+                          checksum: "0607ada3aa1aee1ce315c2f7ac6473462a49e109890288def4aa61e9ef37c66f"),
         .binaryTarget(
             name: "url_launcher_ios",
             path: "Frameworks/Release/url_launcher_ios.xcframework"
