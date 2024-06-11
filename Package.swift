@@ -33,48 +33,48 @@ let package = Package(
         .binaryTarget(
             name: "App",
             url: "https://github.com/PatientOrderSets/thinkresearch_messenger_ios_swift_sdk/releases/download/v1.0.0/App.xcframework.zip",
-            checksum: "e67021ee376fc13137b55138c457d1f4a7e6a392d86c5fa48a1664c7a6277c53s"),
+            checksum: "09c43c20f19b3cbddfb75674fcc21a076b83cb370099037e76c9b793eedeb30c"),
         
             .binaryTarget(name: "Flutter",
                           url: "https://github.com/PatientOrderSets/thinkresearch_messenger_ios_swift_sdk/releases/download/v1.0.0/Flutter.xcframework.zip",
-                          checksum: "7e4736080ce3c8193226af4cdbdaea259f5cce510382c0f7c73367578f53c13c"),
+                          checksum: "9e8d0c5f46d26e94041936e6fd9ebc0e4abef7b6c3b9404ad43831d0421426e0"),
         .binaryTarget(name: "FlutterPluginRegistrant",
                       url: "https://github.com/PatientOrderSets/thinkresearch_messenger_ios_swift_sdk/releases/download/v1.0.0/FlutterPluginRegistrant.xcframework.zip",
-                      checksum: "76ad682f58d5fc169572f7fbfd7518da8bc7d60f8db78565ce0f1dc5d390e33d"),
+                      checksum: "8a49669f619b5a34abb37508a036fead3ea676a7bd25e92eb67cca69a7900e65"),
         
             .binaryTarget(name: "package_info_plus",
                           url: "https://github.com/PatientOrderSets/thinkresearch_messenger_ios_swift_sdk/releases/download/v1.0.0/package_info_plus.xcframework.zip",
-                          checksum: "da6b84a046f90f5a4f6b4533d7c27438efa1f77010c9945a668a0a51d8a1152c"),
+                          checksum: "a43b5246ca4d4a56757dabceac70ea64682e1ab74565a61499c9cba4f89b3f13"),
         
             .binaryTarget(name: "path_provider_foundation",
                           url: "https://github.com/PatientOrderSets/thinkresearch_messenger_ios_swift_sdk/releases/download/v1.0.0/path_provider_foundation.xcframework.zip",
-                          checksum: "f8a8da675be2ea1d1352d22fabd8e58ae4d2fbfe3e039acd2ff06c28c294848e"),
+                          checksum: "268e372cc23edbe4d88a4d51bd8d88828aae4efa6ec6e62f77ca5a003025f490"),
         
             .binaryTarget(name: "sentry_flutter",
                           url: "https://github.com/PatientOrderSets/thinkresearch_messenger_ios_swift_sdk/releases/download/v1.0.0/sentry_flutter.xcframework.zip",
-                          checksum: "51fa0db6e8ad64d3aac9a9111c8f2aa2ef0ad895c0e271dd235a5647e45566eb"),
+                          checksum: "eab5f81b7c0d88a922bf8255c872c30a3d4326a3ee04366316eac5cccb8b8afe"),
         
             .binaryTarget(name: "Sentry",
                           url: "https://github.com/PatientOrderSets/thinkresearch_messenger_ios_swift_sdk/releases/download/v1.0.0/Sentry.xcframework.zip",
-                          checksum: "e67021ee376fc13137b55138c457d1f4a7e6a392d86c5fa48a1664c7a6277c53"),
+                          checksum: "afceb071b1095f1c1ececd4d771efd90f62d204b5e86251378ed83a9279ea642"),
         
             .binaryTarget(name: "SentryPrivate",
                           url: "https://github.com/PatientOrderSets/thinkresearch_messenger_ios_swift_sdk/releases/download/v1.0.0/SentryPrivate.xcframework.zip",
-                          checksum: "458c156c0ae1c6ce3a84e3b37f808be6dc1d2aba24c4fb3135154fc79afcdd5a"),
+                          checksum: "1e6c1559aa0b5c04a2bbbfe831d16cee549a58fb69cfe916586ab57513fd286a"),
         
             .binaryTarget(name: "shared_preferences_foundation",
                           url: "https://github.com/PatientOrderSets/thinkresearch_messenger_ios_swift_sdk/releases/download/v1.0.0/shared_preferences_foundation.xcframework.zip",
-                          checksum: "a4f9a3d62985e0a9e0bddef4cc697acdc73cea84e396cb0819521842b5db0bca"),
+                          checksum: "6cfe99f2e2d1ebec8941eb41cae4fc60f810f0f288092a3eec4601af730189b6"),
         
             .binaryTarget(name: "sqflite",
                           url: "https://github.com/PatientOrderSets/thinkresearch_messenger_ios_swift_sdk/releases/download/v1.0.0/sqflite.xcframework.zip",
-                          checksum: "8ca7341079a0ec6f31c58a2c171180455a8cca869e5481327c2fbdc177653e9c"),
+                          checksum: "0607ada3aa1aee1ce315c2f7ac6473462a49e109890288def4aa61e9ef37c66f"),
         
             .binaryTarget(name: "url_launcher_ios",
                           url: "https://github.com/PatientOrderSets/thinkresearch_messenger_ios_swift_sdk/releases/download/v1.0.0/url_launcher_ios.xcframework.zip",
-                          checksum: "d5e540a3f31092b72e4909fc649360db1314bef9be421babe70e9112fd9e8b07"),
+                          checksum: "b8436250378e4faf7c49c71f35df5e35ab7a6b95533a2db6d86f497b107333b1"),
         .binaryTarget(name: "webview_flutter_wkwebview",
                       url: "https://github.com/PatientOrderSets/thinkresearch_messenger_ios_swift_sdk/releases/download/v1.0.0/webview_flutter_wkwebview.xcframework.zip",
-                      checksum: "3dc019b49f4def670dd35da32e80d74365bd7315250f5b313cb9d2bc089cc417"),
+                      checksum: "dacff973f24a4e3086c074c49677328c475b80d97184a44fa76d8c29c5103cb2"),
     ]
 )
