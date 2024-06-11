@@ -75,6 +75,6 @@ let package = Package(
                           checksum: "b8436250378e4faf7c49c71f35df5e35ab7a6b95533a2db6d86f497b107333b1"),
         .binaryTarget(name: "webview_flutter_wkwebview",
                       url: "https://github.com/PatientOrderSets/thinkresearch_messenger_ios_swift_sdk/releases/download/v1.0.0/webview_flutter_wkwebview.xcframework.zip",
-                      checksum: "dacff973f24a4e3086c074c49677328c475b80d97184a44fa76d8c29c5103cb2"),
+                      checksum: "dbe2139ad9395917d372adb5c8c4944babd39d564e701c76ff55bca911733693"),
     ]
 )
