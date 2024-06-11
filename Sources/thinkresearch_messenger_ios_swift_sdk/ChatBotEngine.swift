@@ -41,7 +41,7 @@ class ChatBotEngine {
                 withEntrypoint: entryPoint,
                 libraryURI: libraryURI,
                 initialRoute: initialRoute,
-                entrypointArgs: [self.configuration.appId, self.configuration.originURL, self.configuration.baseUrl, self.configuration.lang ] // Pass arguments if needed
+                entrypointArgs: [self.configuration.appId, self.configuration.baseUrl, self.configuration.lang ] // Pass arguments if needed
             )
             GeneratedPluginRegistrant.register(with: self.flutterEngine)
         }
