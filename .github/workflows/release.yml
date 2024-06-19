@@ -64,7 +64,7 @@ jobs:
       - name: "Build Frameworks"
         working-directory: chatbot_sdk_channel
         run: |
-          flutter build ios-framework --output=Frameworks --no-profile
+          flutter build ios-framework --output=Frameworks --no-profile --no-debug
 
       - name: "Zip release frameworks"
         working-directory: chatbot_sdk_channel
@@ -90,7 +90,7 @@ jobs:
       - name: Publish
         uses: ncipollo/release-action@v1
         with:
-          artifacts: "Frameworks/Release/*.zip,Frameworks/Release/*.checksum.txt,Frameworks/Debug/*.zip,Frameworks/Debug/*.checksum.txt"
+          artifacts: "chatbot_sdk_channel/Frameworks/Release/*.zip,chatbot_sdk_channel/Frameworks/Release/*.checksum.txt,chatbot_sdk_channel/Frameworks/Debug/*.zip,chatbot_sdk_channel/Frameworks/Debug/*.checksum.txt"
           replacesArtifacts: false
           allowUpdates: true
           tag: ${{needs.release.outputs.tag}}
