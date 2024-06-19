@@ -4,6 +4,7 @@ To install and use the `thinkresearch_messenger_ios_swift_sdk` library using Swi
 
 **Important**: This package only works on physical devices, not on simulators.
 
+
 ### How to Install
 
 1. **Open Xcode** and navigate to your project.
