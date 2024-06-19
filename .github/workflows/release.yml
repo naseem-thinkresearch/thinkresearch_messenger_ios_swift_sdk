@@ -34,7 +34,7 @@ jobs:
 
       - name: "Clone Chatbot flutter"
         run: |
-          git clone https://ghp_${{ secrets.GITHUB_PAT }}@github.com/naseem123/chatbot_sdk_channel.git
+          git clone -b main https://ghp_${{ secrets.GITHUB_PAT }}@github.com/naseem123/chatbot_sdk_channel.git
           cd chatbot_sdk_channel/
 
       - name: 'Flutter pub get'
@@ -84,7 +84,8 @@ jobs:
           shasum -a 256 url_launcher_ios.xcframework.zip | cut -f1 -d' '>> url_launcher_ios.checksum.txt
           zip -r webview_flutter_wkwebview.xcframework.zip webview_flutter_wkwebview.xcframework
           shasum -a 256 webview_flutter_wkwebview.xcframework.zip | cut -f1 -d' '>> webview_flutter_wkwebview.checksum.txt
-
+          ls
+          echo ${{ github.ref_name }}
       - name: Publish
         uses: ncipollo/release-action@v1
         with:
