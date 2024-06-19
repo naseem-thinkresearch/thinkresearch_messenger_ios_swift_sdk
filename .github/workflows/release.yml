@@ -91,4 +91,4 @@ jobs:
           artifacts: "chatbot_sdk_channel/Frameworks/Release/*.zip,chatbot_sdk_channel/Frameworks/Release/*.checksum.txt"
           replacesArtifacts: false
           allowUpdates: true
-          tag: ${{needs.release.outputs.tag}}
+          tag: ${{ github.ref_name }}
