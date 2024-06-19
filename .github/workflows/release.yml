@@ -2,8 +2,8 @@ name: Publish
 
 on:
   push:
-    branches:
-      - master
+    tags:
+      - '*'
 
 concurrency:
   group: ${{ github.ref }}-${{ github.workflow }}
@@ -11,8 +11,6 @@ concurrency:
 
 jobs:
   xcframeworks:
-    env: 
-      env_var: ${{ vars.ENV_CONTEXT_VAR }}
     runs-on: macos-latest
     steps:
       - name: "Checkout Chatbot SDK Flutter"
@@ -90,7 +88,7 @@ jobs:
       - name: Publish
         uses: ncipollo/release-action@v1
         with:
-          artifacts: "chatbot_sdk_channel/Frameworks/Release/*.zip,chatbot_sdk_channel/Frameworks/Release/*.checksum.txt,chatbot_sdk_channel/Frameworks/Debug/*.zip,chatbot_sdk_channel/Frameworks/Debug/*.checksum.txt"
+          artifacts: "chatbot_sdk_channel/Frameworks/Release/*.zip,chatbot_sdk_channel/Frameworks/Release/*.checksum.txt"
           replacesArtifacts: false
           allowUpdates: true
           tag: ${{needs.release.outputs.tag}}
