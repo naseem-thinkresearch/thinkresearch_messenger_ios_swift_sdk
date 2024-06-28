@@ -21,7 +21,15 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
-
+      - name: Replace USER_NAME and GIT_PAT in settings.gradle
+        run: |
+          echo "Checking if secrets are set correctly..."
+          if [[ -z "${{ secrets.GITHUB_PAT }}" ]]; then
+            echo "GITHUB_PAT is not set!"
+            exit 1
+          else
+            echo "GITHUB_PAT is set."
+          fi
       - name: Checkout current tag
         run: |
           git checkout ${{needs.release.outputs.tag}}
