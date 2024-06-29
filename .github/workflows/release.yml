@@ -21,7 +21,11 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      
+      - name: Replace USER_NAME and GIT_PAT in settings.gradle
+        run: |
+          echo "Checking if secrets are set correctly..."
+          echo "GITHUB_USERNAME=${{ secrets.GITHUB_USERNAME }}" >> $GITHUB_ENV
+          echo "GITHUB_PAT=${{ secrets.GITHUB_PAT }}" >> $GITHUB_ENV
       - name: Checkout current tag
         run: |
           git checkout ${{needs.release.outputs.tag}}
